@@ -51,10 +51,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+ഹായ്  {},🤝 ഞാനാണ് is {} 😍
+ ഗ്രൂപ്പിൽ കയറാൻ വരുന്നവർ ഗ്രൂപ്പിനെ പറ്റിയും റൂൾസ് നെ  പറ്റിയും അറിയണം... 😌എന്നാൽ ഗ്രൂപ്പ് ഭരിക്കാൻ വരുന്നവൻ അവൻ ആരാ എന്ന് ബാക്കി ഉള്ളവരെ  അറിയിക്കണം!!😈
+
+നിങ്ങൾ ധൈര്യശലികൾ ആണോ😎  എന്നാൽ /help  ഇൽ തൊട്ട് നോക്കു!കമ്മാൻഡ്‌സ് ഒകെ വരുന്നത് കാണാം☠☠☠.
 """
 
 HELP_STRINGS = """
@@ -77,7 +77,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/b0db36b7d7e577f9aabef.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -200,7 +200,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Saitama to your group",
+                            text="☑️ Add me",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -220,7 +220,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="🗄 Source code",
-                             url="https://github.com/AnimeKaizoku/SaitamaRobot")
+                             url="https://t.me/Danger_of_telegram")
                      ]]))
     else:
         update.effective_message.reply_text(
