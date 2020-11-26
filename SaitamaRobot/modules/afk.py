@@ -37,7 +37,7 @@ def afk(update: Update, context: CallbackContext):
     fname = update.effective_user.first_name
     try:
         update.effective_message.reply_text("{}എങ്ങോട് ആണ് ആവോ🧐🤔
- ഓ പോയത് പോയി🚶!{}".format(
+ ഓ പോയത് പോയി🚶!".format(
             fname, notice))
     except BadRequest:
         pass
