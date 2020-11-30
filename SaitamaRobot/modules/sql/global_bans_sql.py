@@ -5,7 +5,7 @@ Available Commands:
 .ungban REASON"""
 from telethon import events
 import asyncio
-from uniborg.util import admin_cmd
+from SaitamaRobot.modules.sql import BASE, SESSION
 
 
 @borg.on(admin_cmd(pattern="gban ?(.*)"))
