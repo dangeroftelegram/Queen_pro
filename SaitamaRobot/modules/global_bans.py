@@ -1,4 +1,4 @@
- import html
+import html
 from io import BytesIO
 from typing import Optional, List
 
