@@ -1,4 +1,4 @@
-from SaitamaRobot import , tbot, OWNER_ID
+from SaitamaRobot import DRAGONS,DEV_USERS, OWNER_ID
 from julia.events import register
 from telethon.tl.types import ChatBannedRights
 from telethon.tl import functions
@@ -6,7 +6,7 @@ from telethon.tl import types
 from telethon import events
 from telethon.tl.functions.channels import EditBannedRequest
 from pymongo import MongoClient
-from julia import MONGO_DB_URI
+from SaitamaRobot import MONGO_DB_URI
 
 G_BAN_LOGGER_GROUP = "@MissJuliaRobotGbans"
 BANNED_RIGHTS = ChatBannedRights(
