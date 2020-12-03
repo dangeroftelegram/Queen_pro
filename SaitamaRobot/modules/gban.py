@@ -1,5 +1,5 @@
 from SaitamaRobot import DRAGONS,DEV_USERS, OWNER_ID
-from SaitamaRobot.modules import register
+from SaitamaRobot import register
 from telethon.tl.types import ChatBannedRights
 from telethon.tl import functions
 from telethon.tl import types
@@ -8,7 +8,7 @@ from telethon.tl.functions.channels import EditBannedRequest
 from pymongo import MongoClient
 from SaitamaRobot import MONGO_DB_URI
 
-G_BAN_LOGGER_GROUP = "@MissJuliaRobotGbans"
+G_BAN_LOGGER_GROUP = "@Abhi2255o"
 BANNED_RIGHTS = ChatBannedRights(
     until_date=None,
     view_messages=True,
