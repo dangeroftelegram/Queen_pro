@@ -1,5 +1,5 @@
 from SaitamaRobot import DRAGONS,DEV_USERS, OWNER_ID
-from SaitamaRobot.config import register
+from SaitamaRobot.events import register
 from telethon.tl.types import ChatBannedRights
 from telethon.tl import functions
 from telethon.tl import types
