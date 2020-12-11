@@ -1,4 +1,4 @@
-from SaitamaRobot import SUDO_USERS, tbot, OWNER_ID
+from SaitamaRobot import SUDO_USERS,DEV_USERS, OWNER_ID
 from julia.events import register
 from telethon.tl.types import ChatBannedRights
 from telethon.tl import functions
