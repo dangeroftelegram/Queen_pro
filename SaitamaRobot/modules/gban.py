@@ -128,4 +128,4 @@ async def type_ban(event):
             to_check = get_reason(id=event.sender_id)
             reason = to_check["reason"]
             bannerid = to_check["bannerid"]
-            await DRAGONS(EditBannedRequest(event.
+            await SaitamaRobot(EditBannedRequest(event.
