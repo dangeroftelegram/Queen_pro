@@ -128,4 +128,8 @@ async def type_ban(event):
             to_check = get_reason(id=event.sender_id)
             reason = to_check["reason"]
             bannerid = to_check["bannerid"]
-            await SaitamaRobot(EditBannedRequest(event.
+            await tbot(EditBannedRequest(event.id, event.sender_id, BANNED_RIGHTS))
+            await event.reply("This user is gbanned and has been removed !\n\nGbanned By: {}\nReason: {}".format(bannerid, reason))
+          except Exception as e:
+             print(e)
+             return
